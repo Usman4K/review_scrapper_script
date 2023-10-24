@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>List of Objects</title>
+</head>
+<body>
+    <h1>Flask App</h1>
+    <form method="POST" action="/execute_script">
+        <button type="submit">Execute Script</button>
+    </form>
+    {% if result %}
+    <ul>
+        {% for item in result %}
+            <li>{{ item }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+</body>
+</html>
